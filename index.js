@@ -4,7 +4,7 @@ const cors = require('cors')
 var elasticemail = require('elasticemail');
 
 const corsOptions = {
-    origin: ['http://localhost:3000', 'http://localhost:3001'], 
+    origin: ['http://localhost:3000', 'http://localhost:3001', 'https://aungzawphyo.vercel.app'], 
     methods: ['GET', 'POST', 'PUT', 'DELETE', 'PATCH', 'HEAD', 'OPTIONS'],
     allowedHeaders: ['Content-Type', 'Origin', 'X-Requested-With', 'Accept', 'x-client-key', 'x-client-token', 'x-client-secret', 'Authorization'],
     credentials:true,            //access-control-allow-credentials:true
