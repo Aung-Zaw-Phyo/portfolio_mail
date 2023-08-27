@@ -20,6 +20,10 @@ var client = elasticemail.createClient({
   apiKey: '0A42392A866499832E52B398B877C3D2C21A5CB3427067D72414AE4879352497361F04C46511D7244C893347190E0549'
 });
 
+app.get('/', (req, res, next) => {
+    res.send('Server is running ....')
+})
+
 app.post('/api/portfolio/send-email', async (req, res, next) => {
     try {
         const name = req.body.name;
